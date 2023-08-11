@@ -15,11 +15,34 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React :D
         </a>
       </header>
+      <body>
+
+        <h1> {user.name} </h1>
+
+        <img
+            className='avatar'
+            src={user.imageUrl}
+            alt='kitty'
+            style={{
+                width: user.imageSize,
+                height: user.imageSize
+            }}
+        />
+
+      </body>
     </div>
   );
 }
+
+const user = {
+  name: 'Gael Perez',
+  imageUrl: 'https://pbs.twimg.com/profile_images/1267883771828682753/-VN1yMAs_400x400.jpg',
+  imageSize: 200,
+};
+
+
 
 export default App;
